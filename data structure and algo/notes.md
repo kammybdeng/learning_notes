@@ -3,7 +3,10 @@ Recursive Functions
     - Base Case: to stop recursion
     - Recursive step; to get closer and closer to the base case
 - Similar to iterative loops. Tend to be **less** efficient because of the call stack
--
+New Concepts:
+- Call stack
+- Execution Context
+- Powerset
 
 
 Bubble Sort
