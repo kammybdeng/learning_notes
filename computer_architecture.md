@@ -3,7 +3,7 @@
 ## How Computers Work
 1. Input: Human phyical interaction with computer (eg. clicking, turning knobs, typing)
 2. Processing:
-    - CPU: [Central Processing Unit](Central-Processing-Unit).
+    - CPU: [Central Processing Unit](#Central-Processing-Unit).
     - Responsibility of establishing communication between hardware and software. (eg. Decipher data input and sends instruction to hardwares as outputs.)
 3. Memory:
     - RAM: Random Access Memory (* Primary Memory)
@@ -56,12 +56,43 @@ Two design practices:
 2. Arithmetic and Logic Unit (ALU): consists of all processors
 3. Registers (Immediate Access Store): limited space, high speed memory and CPU can quickly access
 
+#### OPCODEs
+```
+First few bits is the OPICODE or OPeration CODE, which always tells the processorr what type of instruction it is receiving
+```
+###### 32-bit instruction
+```
+Example:
+000001 01001 10111 0001101001010110
+OPCODE
+```
+
 
 ## Assembly
 
 **Assembly**: low-level programming language used to translate instructions into computer's machine code.
 
+#### Compilation Process
+1. **Preprocessing**: removing comments, expanding included macros, and code maintainance
+2. **Compiling**: translate into optimized Assembly language
+3. **Assembling**: generate machine code with the assembly language
+4. **Linking**: filing in function calls
 
+###### Microprocessor without Interlocked Pipeline Stages(MIPS) Examples:
+```
+ADD $5, $5, $6
+    -> add values in Register 5 to Register 5 and save result at Register 6
+
+LW $4, ($5)
+    -> Load value stored in memory address of Register 5 into Register 4
+    -> "()" indirect, treats value in Register as the **memory address in another memory location** and retrieve that value from that memory location
+    (eg.
+    Register 5: 839
+    Another memory with address 839: 1234
+    $5 : 839
+    ($5): 1234
+    )
+```
 
 ## Cache
 **Processor-Memory Performance Gap**
