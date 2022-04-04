@@ -95,6 +95,7 @@ LW $4, ($5)
 ```
 
 ## Cache
+##### Memory Hierarchy
 **Processor-Memory Performance Gap**
 - Processor performance > Memory performance
 - Simple Memory Hierarchy
@@ -104,6 +105,49 @@ LW $4, ($5)
     |                Main Memory       |
 Size decreases                 Performance increases
 ```
-Cache
-- Tag, Data
-- Cache hit
+##### Cache Memory
+- Cache is made up of blocks and each block has a pair of (data, tag)
+- Tag: the address of the data in the main memory
+
+
+**Cache Hit** : when data requested from the processor is in the cache
+**Cache Miss** : when data requested from the processor is **NOT** in the cache
+
+**Replacement Policy**: to replace an existing entry in th cache when cache is full
+1. First In First Out (FIFO):
+2. Least Recently Used (LRU): replaces the entry with the most time passed since it was last accessed.
+3. Random Replacement
+**Goal is to maximize the number of cache hits** and depending on implementation cost and need, designer will choose the most appropriate policy.
+
+**Cache Associativity**: process of mapping data locations/addresses in main memory to specificed blocks in the cache
+1. Fully associative: a cache block can go **anywhere** in the cache
+2. Direct Mapped (or a 1-way Set Associative): every location goes into **one** specificed block in cache
+3. n-Way Set Associative: a cache made up of n-blocks per set. (eg. set_number = address % n-way-sets)
+
+**Write Policy**:  defines how data is written to main memory when overwritten in cache
+1. Write-through: writes data to cache and main memory at the same time.
+2. Write-back: writes data to cache but only writes to main memory when data is about to be replaced in the cache.
+
+## Instruction Parallelism
+##### Instruction Cycle: how CPU handles instructions
+1. Fetch
+2. Decode
+3. Execute
+4. Memory Acces
+5. Registry Write-Back
+
+##### Instruction Pipelining: a technique that allows a single computer processor to break down and process multiple instructions at the same time
+**Parallelism**: process multiple instructions at the same time
+**Pipelining**: one strategy to accomplish parallelism by processing instructions in overlapping phases
+1. built into hardware
+2. increase in complexity of hardware comes at cost of processor running hotter and using more power
+
+##### Hazards
+1. Structural
+2. Data
+3. Control
+
+
+
+### Extra
+[CodeAcademy Cheat Sheet](https://www.codecademy.com/learn/computer-architecture/modules/intro-to-computer-architecture/cheatsheet)
