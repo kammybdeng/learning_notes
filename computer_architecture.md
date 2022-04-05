@@ -151,6 +151,7 @@ Size decreases                 Performance increases
 Not the same as multi-core processors, which has multiple processors. Superscalar has one processor but multiple execution units.
 
 <img alt="scalar_vs_superscalar" src="https://www.researchgate.net/profile/Mostafa-Soliman-5/publication/283345112/figure/fig2/AS:614302499217410@1523472537025/Superscalar-versus-scalar-clock-cycles.png" />
+
 1. Structural
 2. Data
 3. Control

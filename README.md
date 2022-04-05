@@ -6,3 +6,8 @@ Learning notes and progress of Codeacademy courses.
     - [Syllabus](https://www.codecademy.com/learn/learn-data-structures-and-algorithms-with-python)
 2. **Computer Architecture**: Learn about the rules, organization of components, and processes that allow computers to process instructions.
     - [Syllabus](https://www.codecademy.com/learn/computer-architecture)
+
+
+## Other Courses
+Course notes created in the past, content might be outdated**
+[UCSanDiegoX: CSE100x Data Structure](https://github.com/kammybdeng/data-science-portfolio/blob/master/data-structure.md)
