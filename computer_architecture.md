@@ -95,7 +95,7 @@ LW $4, ($5)
 ```
 
 ## Cache
-##### Memory Hierarchy
+### Memory Hierarchy
 **Processor-Memory Performance Gap**
 - Processor performance > Memory performance
 - Simple Memory Hierarchy
@@ -105,7 +105,7 @@ LW $4, ($5)
     |                Main Memory       |
 Size decreases                 Performance increases
 ```
-##### Cache Memory
+#### Cache Memory
 - Cache is made up of blocks and each block has a pair of (data, tag)
 - Tag: the address of the data in the main memory
 
@@ -129,24 +129,34 @@ Size decreases                 Performance increases
 2. Write-back: writes data to cache but only writes to main memory when data is about to be replaced in the cache.
 
 ## Instruction Parallelism
-##### Instruction Cycle: how CPU handles instructions
+### Instruction Cycle: how CPU handles instructions
 1. Fetch
 2. Decode
 3. Execute
 4. Memory Acces
 5. Registry Write-Back
 
-##### Instruction Pipelining: a technique that allows a single computer processor to break down and process multiple instructions at the same time
+### Instruction Pipelining: a technique that allows a single computer processor to break down and process multiple instructions at the same time
 **Parallelism**: process multiple instructions at the same time
 **Pipelining**: one strategy to accomplish parallelism by processing instructions in overlapping phases
 1. built into hardware
 2. increase in complexity of hardware comes at cost of processor running hotter and using more power
 
-##### Hazards
+#### Hazards
 1. Structural
 2. Data
 3. Control
 
+### Superscalar: a technique that instructions are sent to different execution units (eg. integer shifter, float point arithmetic, etc) at the same time, allowing for more than one instruction to be processed in a single clock cycle.
+Not the same as multi-core processors, which has multiple processors. Superscalar has one processor but multiple execution units.
+![scalar_vs_superscalar](https://www.researchgate.net/figure/
+Superscalar-versus-scalar-clock-cycles_fig2_283345112)
+1. Structural
+2. Data
+3. Control
+
+
+## Data-Level Parallelism
 
 
 ### Extra
