@@ -150,7 +150,7 @@ Size decreases                 Performance increases
 ### Superscalar: a technique that instructions are sent to different execution units (eg. integer shifter, float point arithmetic, etc) at the same time, allowing for more than one instruction to be processed in a single clock cycle.
 Not the same as multi-core processors, which has multiple processors. Superscalar has one processor but multiple execution units.
 
-<img alt="scalar_vs_superscalar" src="https://www.researchgate.net/figure/Superscalar-versus-scalar-clock-cycles_fig2_283345112g" />
+<img alt="scalar_vs_superscalar" src="https://www.researchgate.net/figure/Superscalar-versus-scalar-clock-cycles_fig2_283345112" />
 1. Structural
 2. Data
 3. Control
