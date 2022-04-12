@@ -1,3 +1,21 @@
+## Software Design Principles
+Object-Oriented Programming
+- **DATA**:
+- **BEHAVIOR**:
+
+Other types of programming:
+1. Procedural:
+    - order of code matters
+    -
+2. Functional:
+    - data and behavior are kept separate
+    -
+
+
+
+
+
+
 ## Development with Swagger and OpenAPI
 **Application Programming Interfaces (API)** enable two different services to interact and complement each other.
 
