@@ -15,11 +15,11 @@
 
 
 ### Declarative vs Imperative
-Imperative (急切): "how to solve a problem"
-- OOP
-- procedural
-Declarative (聲明性): "what problem to solve"
-- functional
+- Imperative (急切): "how to solve a problem"
+    - OOP
+    - procedural
+- Declarative (聲明性): "what problem to solve"
+    - functional
 
 ### Immutable Data types
 - thread-safe data manipulation
@@ -27,9 +27,9 @@ Declarative (聲明性): "what problem to solve"
 
 
 
-### Tuple vs Namedtuple
-- Tuple: immuntable
-- Namedtuple: light-weight, object-like variable. "You should use named tuples instead of tuples anywhere you think object notation will make your code more pythonic and more easily readable". [reference](https://stackoverflow.com/questions/2970608/what-are-named-tuples-in-python)
+#### Tuple vs Namedtuple
+- **Tuple**: immuntable
+- **Namedtuple**: light-weight, object-like variable. "You should use named tuples instead of tuples anywhere you think object notation will make your code more pythonic and more easily readable". [stackoverflow credit: what are namedtuple](https://stackoverflow.com/questions/2970608/what-are-named-tuples-in-python)
 ```
 from collections import namedtuple
 
@@ -47,11 +47,10 @@ print(scott.age) # Output: 28
 print(scott.grade) # Output: ‘A’
 ```
 
-### Namedtuple vs Python Dictionaries
+#### Namedtuple vs Python Dictionaries
 - Dictionaries: hash table type
 ```
 In dicts, only the keys have to be hashable, not the values. namedtuples don't have keys, so hashability isn't an issue.
 ```
-[reference](https://stackoverflow.com/questions/9872255/when-and-why-should-i-use-a-namedtuple-instead-of-a-dictionary
-)
-[hashable](https://docs.python.org/3/glossary.html#term-hashable)
+- [stackoverflow credit: namedtuple vs dictionary](https://stackoverflow.com/questions/9872255/when-and-why-should-i-use-a-namedtuple-instead-of-a-dictionary)
+- [python doc credit: hashable](https://docs.python.org/3/glossary.html#term-hashable)
