@@ -21,6 +21,40 @@
 - Declarative (聲明性): "what problem to solve"
     - functional
 
+```
+EXAMPLE 1:
+------ Imperative ------
+
+lst = []
+for i in nums:
+  if i % 3 == 0:
+    lst.append(i)
+
+for i in range(len(lst)):
+  lst[i] = lst[i] * 3
+
+----- Declarative ------
+
+map(lambda x: x * 3, filter(lambda x: x % 3 == 0, nums))
+
+EXAMPLE 2:
+------ Imperative ------
+lst = []
+for i in nums:
+  if i < 5:
+    lst.append(i)
+
+largest = 0
+for i in lst:
+  if i > largest:
+    largest = i
+
+----- Declarative ------
+reduce(lambda x, y: x if x > y else y, filter(lambda x: x < 5, nums))
+
+
+```
+
 ### Immutable Data types
 - thread-safe data manipulation
 - preventing programmers from accidentally changing a value
