@@ -113,5 +113,45 @@ In dicts, only the keys have to be hashable, not the values. namedtuples don't h
 - [python doc credit: hashable](https://docs.python.org/3/glossary.html#term-hashable)
 
 
+## Concurrent Programming
+
+- Program:
+- Process:
+- Thread: sequence of processor intructions (actively being executed)
+  1. share common resources (e.g. memory)
+  2. multipple thread lives within the context of a process
+  3. faster communication and context switching btw threads
+
+Life cycles of a process - 5 states:
+- new, ready, running, blocked, finished
+
+When **process** initialized:
+- process layout created in memory
+- process control block also initialized for OS to manage the process
+- parent-child relationship when 1 process launches another 1
+
+- context switching: a technique to switch a process between states/contexts to execute functions through CPU (expensive)
+
+### Multi-threading
+- single CPU core can execute multiple threads at once
+- caveats:
+  1. data races: multiple threads attempted to modify the same thing
+  2. deadlocks : multiple threads attempted to wait for each other -> system freeze
+
+[Extra: Difference between threads and process](https://www.geeksforgeeks.org/difference-between-process-and-thread/)
+[Extra: Program vs Process vs Thread](https://twitter.com/alexxubyte/status/1518615214316425216)
+
+### Kernel threads vs User threads
+User threads
+- contructed using local function calls
+- not controlled by kernel
+- typically operate independently
+- though still need to be mapped to a kernel
+
+Kernel thread
+- constructed through system calls
+
+
+
 ## Extra
 [Cheat Sheet](https://www.codecademy.com/learn/paths/learn-advanced-python/tracks/learn-advanced-python/modules/logging/cheatsheet)
