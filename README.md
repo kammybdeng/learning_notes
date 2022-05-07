@@ -2,11 +2,11 @@
 
 Learning notes and progress of Codeacademy courses.
 
-1. **Learn Advanced Python 3**(https://www.codecademy.com/learn/learn-advanced-python)
+1. [**Learn Advanced Python 3**](https://www.codecademy.com/learn/learn-advanced-python)
     - Functional Programming, Concurrent Programming, Logging, ...
-1. **CS102: Data Structures and Algorithms**(https://www.codecademy.com/learn/learn-data-structures-and-algorithms-with-python)
+2. [**CS102: Data Structures and Algorithms**](https://www.codecademy.com/learn/learn-data-structures-and-algorithms-with-python)
     - Nodes, Linked-list, Recursion, Trees, Sorting Algorithms, ...
-2. **CS104: Computer Architecture**(https://www.codecademy.com/learn/computer-architecture)
+3. [**CS104: Computer Architecture**](https://www.codecademy.com/learn/computer-architecture)
     - Logic Gates, ISA, Assembly Languages, Cache, Parallelism ...
 
 
