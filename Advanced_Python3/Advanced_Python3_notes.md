@@ -1,3 +1,7 @@
+[Logging](#Logging)
+[Concurrent Programming](#Concurrent-Programming)
+[Concurrent Programming in Python](#Concurrent-Programming-in-Python)
+
 ## Logging
 
 
@@ -115,9 +119,9 @@ In dicts, only the keys have to be hashable, not the values. namedtuples don't h
 
 ## Concurrent Programming
 
-- Program:
-- Process:
-- Thread: sequence of processor intructions (actively being executed)
+- **Program**:
+- **Process**:
+- **Thread**: sequence of processor intructions (actively being executed)
   1. share common resources (e.g. memory)
   2. multipple thread lives within the context of a process
   3. faster communication and context switching btw threads
@@ -140,6 +144,7 @@ When **process** initialized:
 
 [Extra: Difference between threads and process](https://www.geeksforgeeks.org/difference-between-process-and-thread/)
 [Extra: Program vs Process vs Thread](https://twitter.com/alexxubyte/status/1518615214316425216)
+[Extra: Multi-threading vs Multi-processing](https://www.guru99.com/difference-between-multiprocessing-and-multithreading.html)
 
 ### Kernel threads vs User threads
 User threads
@@ -151,6 +156,71 @@ User threads
 Kernel thread
 - constructed through system calls
 
+## Concurrent Programming
+
+- **Sequential Programming**: run instructions in a defined order. Only 1 instruction is being performed at any given time
+- **Concurrent Programming**: support multiple flows of execution a the **same** time
+
+
+```
+Main thread ->                            				-> main thread
+                              Thread 1
+                              Thread 2
+                              Thread 3
+                              …
+                              Thread n
+		Launch different threads			      join back when completed
+```
+
+1. Some context (variables, function names, callstack, etc) are shared
+2. Some context are independent
+
+- Reading from same resources is okay
+- Writing to same resources could run into over-writing incorrect state
+    1. Thread synchronization
+
+### Async
+
+- **async** : declares a function as coroutine that returns:
+1. value
+2. suspension (similar to paused)
+3. continuation (similar to resumed)
+
+- **Await**: suspends execution of the current task until “await” item is completed
+
+
+## Concurrent Programming in Python
+
+1. sequential approach
+2. threading approach
+3. async approach
+4. multiprocessing approach
+
+```
+import
+### threading
+import threading
+t = threading.Thread(target=target_function, args=(arg,))
+t.start()
+
+### async
+import asyncio
+async def target_function():
+  print("hello")
+  await asyncio.sleep(3)
+  print("how are you?")
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(target_function())
+
+# python 3.7
+asyncio.run(target_function)
+
+
+### multiprocessing
+import multiprocessing
+p = multiprocessing.Process(target=target_function, args=(arg,))
+```
 
 
 ## Extra
