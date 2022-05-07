@@ -1,6 +1,6 @@
-[Logging](#Logging)
-[Concurrent Programming](#Concurrent-Programming)
-[Concurrent Programming in Python](#Concurrent-Programming-in-Python)
+- [Logging](#Logging)
+- [Concurrent Programming](#Concurrent-Programming)
+- [Concurrent Programming in Python](#Concurrent-Programming-in-Python)
 
 ## Logging
 
@@ -142,9 +142,9 @@ When **process** initialized:
   1. data races: multiple threads attempted to modify the same thing
   2. deadlocks : multiple threads attempted to wait for each other -> system freeze
 
-[Extra: Difference between threads and process](https://www.geeksforgeeks.org/difference-between-process-and-thread/)
-[Extra: Program vs Process vs Thread](https://twitter.com/alexxubyte/status/1518615214316425216)
-[Extra: Multi-threading vs Multi-processing](https://www.guru99.com/difference-between-multiprocessing-and-multithreading.html)
+1. [Extra: Difference between threads and process](https://www.geeksforgeeks.org/difference-between-process-and-thread/)
+2. [Extra: Program vs Process vs Thread](https://twitter.com/alexxubyte/status/1518615214316425216)
+3. [Extra: Multi-threading vs Multi-processing](https://www.guru99.com/difference-between-multiprocessing-and-multithreading.html)
 
 ### Kernel threads vs User threads
 User threads
@@ -180,6 +180,7 @@ Main thread ->                            				-> main thread
     1. Thread synchronization
 
 ### Async
+[asynchronous in JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing)
 
 - **async** : declares a function as coroutine that returns:
 1. value
