@@ -2,10 +2,12 @@
 
 Learning notes and progress of Codeacademy courses.
 
-1. **CS102: Data Structures and Algorithms**: Learn what data structures and algorithms are, why they are useful, and how you can use them effectively in Python.
-    - [Syllabus](https://www.codecademy.com/learn/learn-data-structures-and-algorithms-with-python)
-2. **CS104: Computer Architecture**: Learn about the rules, organization of components, and processes that allow computers to process instructions.
-    - [Syllabus](https://www.codecademy.com/learn/computer-architecture)
+1. **Learn Advanced Python 3**(https://www.codecademy.com/learn/learn-advanced-python)
+    - Functional Programming, Concurrent Programming, Logging, ...
+1. **CS102: Data Structures and Algorithms**(https://www.codecademy.com/learn/learn-data-structures-and-algorithms-with-python)
+    - Nodes, Linked-list, Recursion, Trees, Sorting Algorithms, ...
+2. **CS104: Computer Architecture**(https://www.codecademy.com/learn/computer-architecture)
+    - Logic Gates, ISA, Assembly Languages, Cache, Parallelism ...
 
 
 ## Other Courses
