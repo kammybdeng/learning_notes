@@ -1,6 +1,8 @@
 - [Logging](#Logging)
+- [Functional Programming](#Functional-Programming)
 - [Concurrent Programming](#Concurrent-Programming)
 - [Concurrent Programming in Python](#Concurrent-Programming-in-Python)
+- [Database Operation](#Database-Operation)
 
 ## Logging
 
@@ -42,10 +44,10 @@ CRITICAL       50
 
 
 ### Declarative vs Imperative
-- Imperative (急切): "how to solve a problem"
+- Imperative: "how to solve a problem"
     - OOP
     - procedural
-- Declarative (聲明性): "what problem to solve"
+- Declarative: "what problem to solve"
     - functional
 
 ```
@@ -223,6 +225,29 @@ import multiprocessing
 p = multiprocessing.Process(target=target_function, args=(arg,))
 ```
 
+## Database Operation
+```
+import sqlite3
+
+# connect to DB
+con = sqlite3.connect('example.db')
+
+# create cursor
+curs = con.cursor()
+
+# execute SQL queries
+curs.execute('''CREATE TABLE ....... (.., .., ..)''')
+
+# Some import methods
+fetchone()
+fetchmany()
+fetchall()
+executemany()
+con.commit()
+con.close()
+
+```
+[Cheat Sheet - Summary](https://www.codecademy.com/learn/paths/learn-advanced-python/tracks/learn-advanced-python/modules/database-operations/cheatsheet)
 
 ## Extra
 [Cheat Sheet](https://www.codecademy.com/learn/paths/learn-advanced-python/tracks/learn-advanced-python/modules/logging/cheatsheet)
